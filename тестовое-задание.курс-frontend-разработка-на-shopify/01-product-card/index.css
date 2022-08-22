@@ -1,0 +1,172 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+body {
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    width: 481px;
+    height: 72px;
+    margin: 40px auto;
+
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+
+    width: 1180px;
+    height: 482px;
+    margin: 0 auto;
+}
+
+.item_cart {
+    width: 380px;
+    height: 482px;
+    margin-left: 20px;
+
+    box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+
+    background: url("img/Image.png") no-repeat;
+
+    position: relative;
+}
+
+.item_cart:first-child {
+    margin-left: 0;
+}
+
+.item_title {
+    position: absolute;
+    height: 36px;
+    left: 24px;
+    right: 24px;
+    top: 237px;
+
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #2F2F2F;
+}
+
+.item_subtitle {
+    position: absolute;
+    height: 48px;
+    left: 24px;
+    right: 24px;
+    top: 289px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.add_btn {
+    cursor: pointer;
+
+    position: absolute;
+    height: 48px;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+
+    border: 2px solid #42940F;
+    border-radius: 8px;
+
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    color: #42940F;
+
+    transition: .5s;
+}
+
+.add_btn:hover {
+    background: #42940F;
+
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+
+.add_btn.active {
+    background: #1F5200;
+    color: #FFFFFF;
+
+    border: 2px solid #1F5200;
+    border-radius: 8px;
+}
+
+
+.add_btn:disabled {
+    background: #4E4E4E;
+    color: #FFFFFF;
+
+    border: 1px solid #4E4E4E;
+    border-radius: 8px;
+}
+
+.tags {
+    display: flex;
+    margin: 16px 0 0 16px;
+
+    width: 263px;
+    height: 25px;
+}
+
+.tag1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 111px;
+    height: 25px;
+    margin-right: 17px;
+
+    background: #FDCFF3;
+    border-radius: 8px;
+}
+
+.tag2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 131px;
+    height: 25px;
+
+    background: #FFCF56;
+    border-radius: 8px;
+}
+
+.tag_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #2F2F2F;
+}
+
+.tag_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #2F2F2F;
+}
